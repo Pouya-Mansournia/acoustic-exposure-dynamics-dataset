@@ -1,0 +1,3 @@
+building,role,raw_records,valid_records_20_110_db,sensors,floors,observed_days,normal_workday_mean_db,closed_day_mean_db,normal_minus_closed_db,activity_window_delta_db,similar_mean_pairs_threshold_1db,similar_mean_pairs_dynamic_difference_share
+Deployment_A,Discovery/main analysis,185140775,185140119_after_sensitivity_screening,56,5,one_month_private_calendar,61.58,56.19,5.39,5.715898611295309,270,0.67
+Deployment_B,External validation,24393582,24393532,13,1,31,65.56734951208936,64.98156699647237,0.585782515616998,1.767458618880724,10,0.4

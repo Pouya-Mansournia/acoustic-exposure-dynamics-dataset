@@ -1,0 +1,2 @@
+building,raw_records,valid_records_20_110_db,invalid_or_out_of_range_records,sensors,floors,observed_days,mean_sensor_day_db,normal_workday_mean_db,closed_day_mean_db,normal_minus_closed_db
+Deployment_B,24393582,24393532,50,13,1,31,65.41059081072707,65.56734951208936,64.98156699647237,0.585782515616998

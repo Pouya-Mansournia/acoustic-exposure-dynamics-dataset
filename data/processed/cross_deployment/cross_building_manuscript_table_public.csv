@@ -1,0 +1,10 @@
+Measure,Building A,Building B
+Raw records,"185,140,775","24,393,582"
+Valid records used after range screening,sensitivity checked; 656 records outside 20-110 dB,"24,393,532"
+Calibrated nodes,56,13
+Anonymized floors,5,1
+Normal minus closed mean,+5.39 dB,+0.59 dB
+Activity-window contrast,+5.72 dB,+1.77 dB
+Similar-mean pairs below 1 dB,270 pairs; 67% dynamic-different,10 pairs; 40% dynamic-different
+Floor heterogeneity validation,tested,not testable
+Remote-work/low-attendance validation,tested,not available

@@ -1,0 +1,5 @@
+replication_target,building_a_result,building_b_result,directional_replication,interpretation
+normal_workday_above_closed_day,positive; +5.39 dB,positive; +0.59 dB,yes,"Replicates direction, with much smaller magnitude in Building B."
+activity_window_above_other_hours,positive; +5.72 dB,positive; +1.77 dB,yes,Replicates recurrent within-day activity-window contrast.
+floor_level_heterogeneity,observed across five anonymized floors,not testable; one anonymized floor,not_testable,Building B cannot validate floor heterogeneity because only one floor is available.
+similar_mean_different_dynamics,observed across multiple similar-mean pairs,10 pairs within 1 dB; 40% exceeded dynamic-difference criterion,yes,Replicates the central beyond-average-dB pattern in an independent deployment.

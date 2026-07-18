@@ -1,0 +1,9 @@
+building,weighting_scheme,rank_correlation_with_equal,top_quartile_overlap_with_equal
+Deployment_A,equal,0.9999999999999998,1.0
+Deployment_A,variability_heavy,0.9450074338751924,0.8571428571428571
+Deployment_A,high_exposure_heavy,0.9980005811734616,1.0
+Deployment_A,quiet_availability_heavy,0.947844216349076,1.0
+Deployment_A,equal,1.0,1.0
+Deployment_A,variability_heavy,0.9282767450912596,0.75
+Deployment_A,high_exposure_heavy,0.913343367482011,0.75
+Deployment_A,quiet_availability_heavy,1.0,1.0

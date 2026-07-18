@@ -1,0 +1,8 @@
+metric,operational_group,all_records,range_screened_20_110,screened_minus_all_db
+sensor_day_mean_db,Broad remote-work periods,58.78713959985803,58.7873312022085,0.0001916023504691
+sensor_day_mean_db,Closed periods,56.37413710772626,56.37437451685158,0.0002374091253187
+sensor_day_mean_db,Low-attendance periods,55.29146358662479,55.29185862480552,0.0003950381807342
+sensor_day_mean_db,Normal workdays,61.55093179993424,61.551104238563525,0.0001724386292849
+sensor_hour_activity_contrast_db,Activity minus other,5.724022240809504,5.723935348405945,-8.689240355863603e-05
+sensor_hour_activity_mean_db,Activity window,64.48366957660735,64.4837897157587,0.000120139151349
+sensor_hour_activity_mean_db,Other periods,58.75964733579785,58.75985436735276,0.0002070315549076

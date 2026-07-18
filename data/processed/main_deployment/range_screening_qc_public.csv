@@ -1,0 +1,2 @@
+total_records_read,numeric_records,missing_or_non_numeric_records,outside_20_110_db_records,outside_20_110_db_share,files_scanned
+185140775,185140775,0,656,3.5432497244326646e-06,30

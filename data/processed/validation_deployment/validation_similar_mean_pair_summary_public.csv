@@ -1,0 +1,4 @@
+mean_difference_threshold_db,n_pairs,n_substantial_dynamic_difference,share_substantial_dynamic_difference
+0.25,3,1,0.3333333333333333
+0.5,5,1,0.2
+1.0,10,4,0.4

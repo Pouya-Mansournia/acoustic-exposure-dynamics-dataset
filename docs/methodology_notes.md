@@ -1,12 +1,9 @@
 # Methodology Notes
 
-The public dataset is derived from a one-month deployment of calibrated dB-only acoustic IoT nodes in an occupied multi-floor office HQ. Raw audio was not stored. Raw high-frequency logs are not included in this repository.
+The public dataset is derived from two occupied-office deployments of calibrated dB-only acoustic IoT nodes. Raw audio was not stored. Raw high-frequency logs are not included.
 
-Original sound values were described by the deployment team as calibrated SPL-like dB values derived from 5 ms RMS windows. Public tables provide aggregate features at sensor, period, floor, pairwise, and operational-effect levels.
+The reported values are calibrated SPL-like dB values derived from short RMS windows in deployed firmware. They are not represented as IEC-certified sound-level-meter measurements and are not formal LAeq values unless the firmware averaging definition and calibration residuals are independently supplied.
 
-Operational events were retained only as broad labels:
+Deployment A supports the main multi-floor analysis. Deployment B supports compatible external validation only: normal-workday versus closed-day direction, activity-window direction, and the beyond-average-dB pattern.
 
-- `broad_remote_work`
-- `low_attendance`
-
-The data are suitable for exploring long-term acoustic exposure dynamics, not source classification or room-acoustic parameter estimation.
+Operational event labels are retained only as broad categories and are interpreted as operational case observations rather than statistically replicated interventions.
