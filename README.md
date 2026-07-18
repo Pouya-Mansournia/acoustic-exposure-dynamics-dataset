@@ -39,6 +39,24 @@ This repository supports research on long-term spatiotemporal sound-level behavi
 
 These findings should be interpreted as long-term acoustic exposure dynamics, not occupancy counts or source classification.
 
+## Processing Overview
+
+```mermaid
+flowchart LR
+    A["Calibrated IoT nodes"] --> B["5 ms RMS windows"]
+    B --> C["dB-only sound-level records"]
+    C --> D["Private preprocessing"]
+    D --> E["Anonymized aggregate features"]
+    E --> F["Public dataset tables"]
+    E --> G["Public figures"]
+
+    H["Privacy boundary"] --> C
+    H --> I["No raw audio"]
+    H --> J["No speech content"]
+    H --> K["No exact dates or clock times"]
+    H --> L["No team or original floor labels"]
+```
+
 ## Repository Structure
 
 ```text
