@@ -1,71 +1,58 @@
 # Acoustic Exposure Dynamics Dataset
 
-An anonymized collection of long-term dB-only office sound-level feature tables and analysis outputs for studying privacy-preserving acoustic exposure dynamics in occupied office deployments.
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](LICENSE.md)
 
-This repository is the public companion dataset for a manuscript on distributed dB-only acoustic monitoring. It contains anonymized aggregate feature tables, model outputs, cross-deployment validation summaries, and manuscript figures. It intentionally does not include raw audio, speech content, raw high-frequency logs, exact calendar dates, clock times, customer names, team labels, original floor labels, or labeled floor-plan images.
+An anonymized companion dataset for studying privacy-preserving, long-term dB-only acoustic exposure dynamics in occupied office deployments.
 
-## What This Repository Contains
+This repository contains aggregate feature tables, mixed-effects model outputs, cross-deployment validation summaries, and publication figures. It does not contain raw audio, raw high-frequency logs, exact calendar dates, clock times, customer names, team labels, original floor labels, or labeled floor-plan images.
 
-- `Deployment_A`: the main anonymized multi-floor office deployment.
-- `Deployment_B`: an independent anonymized one-floor validation deployment.
-- Cross-deployment summaries used for external validation.
-- Mixed-effects model outputs and sensitivity analyses.
-- Public figures derived from anonymized aggregate data.
-- Metadata, data dictionary, methodology notes, and privacy limitations.
+## Dataset Snapshot
 
-## What This Repository Does Not Contain
+| Item | Public description |
+|---|---|
+| Main deployment | `Deployment_A`: 56 pseudonymized nodes across five anonymized floors |
+| Validation deployment | `Deployment_B`: 13 pseudonymized nodes on one anonymized floor |
+| Underlying records | 185,140,775 in Deployment A; 24,393,582 in Deployment B |
+| Signal | Calibrated SPL-like dB values derived from 5 ms RMS windows |
+| Raw audio | Not stored and not released |
+| Public data level | Aggregate features, summaries, model outputs, and figures |
 
-- Raw audio.
-- Raw sound logs.
-- Exact calendar dates, weekday labels, or clock times.
-- Names of teams, people, customers, companies, or original floor-plan labels.
-- RT60, T20/T30, impulse responses, or sound-source labels.
-- CO2, temperature, humidity, or light measurements.
+`SPL-like` means device-calibrated sound-level values derived from deployed firmware. It should not be interpreted as IEC-certified sound-level-meter output.
 
-## Underlying Study Summary
+## Pilot Overview
 
-- Deployment A: 185,140,775 underlying dB-only records from 56 pseudonymized nodes across five anonymized floors.
-- Deployment B: 24,393,582 underlying dB-only records from 13 pseudonymized nodes on one anonymized floor.
-- Signal: calibrated SPL-like dB values derived from 5 ms RMS windows.
-- Raw audio: not stored.
+![Privacy-preserving monitoring architecture](figures/manuscript/fig_system_architecture.png)
 
-Throughout this repository, `SPL-like` means device-calibrated sound-level values derived from deployed firmware. It should not be interpreted as IEC-certified sound-level-meter output.
+![Cross-deployment replication summary](figures/manuscript/fig_cross_building_replication.png)
 
-## Key Aggregate Findings
+## What Is Included
 
-- Normal-workday sound levels were higher than closed-day levels in both deployments under the primary arithmetic summary.
-- The main activity window was higher than other periods in both deployments.
-- Low-attendance and broad remote-work categories in Deployment A are operational case observations, not statistically replicated interventions.
-- Similar mean dB values can hide different high-exposure share, quiet-share, and variability profiles.
-- Approximate geometric distance alone weakly explained pairwise daily synchrony in Deployment A.
+- `data/processed/main_deployment/`: Deployment A aggregate features, pairwise metrics, mixed-effects outputs, and sensitivity analyses.
+- `data/processed/validation_deployment/`: Deployment B aggregate validation features.
+- `data/processed/cross_deployment/`: cross-deployment replication summaries.
+- `data/metadata/`: public manifest, data dictionary, and pseudonymized sensor keys.
+- `figures/manuscript/`: publication-ready anonymized figures.
+- `docs/`: methodology notes and privacy limitations.
 
-## Processing Overview
+## Key Use Cases
 
-```mermaid
-flowchart LR
-    A["Calibrated IoT nodes"] --> B["5 ms RMS windows"]
-    B --> C["dB-only sound-level records"]
-    C --> D["Private preprocessing"]
-    D --> E["Anonymized aggregate features"]
-    E --> F["Public dataset tables"]
-    E --> G["Public figures"]
+- Long-term office acoustic exposure analysis.
+- Privacy-preserving acoustic monitoring research.
+- Operational-regime comparison across workday, closed-day, and activity-window conditions.
+- Testing whether average dB hides variability, high-exposure share, and quiet-period differences.
+- Reproducing public model and sensitivity outputs from the manuscript.
 
-    H["Privacy boundary"] --> C
-    H --> I["No raw audio"]
-    H --> J["No speech content"]
-    H --> K["No exact dates or clock times"]
-    H --> L["No team, company, or original floor labels"]
-```
+## Scientific Boundaries
+
+This dataset supports operational acoustic observability, not standardized room-acoustic characterization. It cannot support claims about RT60, T20/T30, room impulse responses, absorption coefficients, speech content, sound-source identity, exact occupancy counts, or physical propagation time between nodes.
+
+Event-level categories are operational case observations rather than statistically replicated interventions.
 
 ## Repository Structure
 
 ```text
 data/
   metadata/
-    public_manifest.json
-    main_sensor_key_public.csv
-    validation_sensor_key_public.csv
-    data_dictionary.md
   processed/
     main_deployment/
     validation_deployment/
@@ -73,20 +60,18 @@ data/
 figures/
   manuscript/
 docs/
-  methodology_notes.md
-  privacy_and_limitations.md
 ```
 
-## Scientific Boundaries
+## Citation
 
-This dataset contains sound-level aggregates and features, not raw audio. Therefore it cannot support claims about RT60, T20, T30, room impulse responses, absorption coefficients, speech content, source identity, exact occupancy counts, or physical propagation time between nodes.
+If you use this dataset, cite this repository and the associated manuscript when available:
 
-The objective is not to replace standardized acoustic room characterization, but to complement it with continuous privacy-preserving operational observability.
+> Mansournia, P. et al. Acoustic Exposure Dynamics Dataset: Anonymized long-term dB-only office sound-level features for privacy-preserving acoustic monitoring research.
 
-## Suggested Citation
-
-Mansournia, P. et al. Acoustic Exposure Dynamics Dataset: Anonymized long-term dB-only office sound-level features for privacy-preserving acoustic monitoring research. GitHub repository.
+See [`CITATION.cff`](CITATION.cff) for machine-readable citation metadata.
 
 ## License
 
-No explicit reuse license has been granted yet. Please contact the repository owner before using the data in publications or derivative datasets.
+The public aggregate dataset and documentation are released under the [Creative Commons Attribution 4.0 International License](LICENSE.md).
+
+Private raw data, raw logs, customer metadata, and any non-public deployment materials are not included in this release and are not licensed by this repository.

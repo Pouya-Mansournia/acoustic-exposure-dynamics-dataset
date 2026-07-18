@@ -35,6 +35,7 @@
     ".gitattributes",
     ".gitignore",
     "CITATION.cff",
+    "LICENSE.md",
     "README.md",
     "data/metadata/data_dictionary.md",
     "data/metadata/main_sensor_key_public.csv",
