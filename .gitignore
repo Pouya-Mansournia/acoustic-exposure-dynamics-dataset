@@ -1,0 +1,14 @@
+# Raw/private data
+00_raw_data/
+*.zip
+*.7z
+*.rar
+*.csv.tmp
+
+# Python/cache
+__pycache__/
+.pytest_cache/
+
+# OS/editor
+.DS_Store
+Thumbs.db

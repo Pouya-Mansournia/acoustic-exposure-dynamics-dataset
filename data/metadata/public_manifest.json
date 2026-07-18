@@ -1,0 +1,36 @@
+{
+  "dataset_name": "Anonymized acoustic exposure dynamics dataset",
+  "source_study": "Privacy-preserving long-term acoustic exposure dynamics in an occupied multi-floor office building",
+  "study_duration": "one_month",
+  "raw_rows_underlying": 185140775,
+  "public_release_contains_raw_records": false,
+  "public_release_contains_raw_audio": false,
+  "public_release_contains_calendar_dates": false,
+  "public_release_contains_clock_times": false,
+  "n_public_sensors": 56,
+  "n_public_floors": 5,
+  "sound_level_definition": "calibrated SPL-like dB derived from 5 ms RMS windows; not formal LAeq",
+  "privacy_transform": [
+    "Raw dB rows are not included.",
+    "Raw audio was never stored and is not included.",
+    "Calendar dates, weekday labels, and clock times are removed.",
+    "Sensor IDs are replaced by S001-style pseudonyms.",
+    "Floor labels are replaced by Floor_A-style pseudonyms.",
+    "Team and device labels are removed.",
+    "Floor-plan images with team labels are not included."
+  ],
+  "files": [
+    "data/metadata/sensor_key_public.csv",
+    "data/processed/acoustic_communities_public.csv",
+    "data/processed/activity_window_effect_summary_public.csv",
+    "data/processed/normal_workday_floor_summary_public.csv",
+    "data/processed/operational_event_effect_summary_public.csv",
+    "data/processed/operational_event_effects_by_sensor_public.csv",
+    "data/processed/pairwise_sensor_metrics_public.csv",
+    "data/processed/period_sensor_features_public.csv",
+    "data/processed/sensor_layout_public.csv",
+    "data/processed/sensor_summary_features_public.csv",
+    "data/processed/similar_mean_different_dynamics_examples_public.csv",
+    "data/processed/topology_model_results_public.csv"
+  ]
+}

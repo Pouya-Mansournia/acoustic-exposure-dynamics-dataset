@@ -1,0 +1,4 @@
+model_name,n_pairs,target_metric,features_used,r2,adjusted_r2,mae,rmse,aic,bic,cross_validated_r2,important_coefficients,p_values_if_valid
+distance_only,1540,pearson_corr,approx_distance,0.0121800779387873,0.011537802306758,0.0978331979346045,0.1643347570832238,-5558.017167946163,-5547.338092555347,,"{""intercept"": 0.88677, ""approx_distance"": -0.07525}",not_computed
+topology_only_floor,1540,pearson_corr,"same_floor_num,different_floor_num",0.0009134189517995,-0.0003866286487836,0.0979124882630212,0.1652692665785862,-5538.551986991853,-5522.53337390563,,"{""intercept"": 0.56959, ""same_floor_num"": 0.29118, ""different_floor_num"": 0.2784}",not_computed
+combined_distance_floor,1540,pearson_corr,"approx_distance,same_floor_num",0.0134277479304951,0.0121439844274769,0.0975299139312643,0.164230942448546,-5557.963500663812,-5541.944887577589,,"{""intercept"": 0.88449, ""approx_distance"": -0.07636, ""same_floor_num"": 0.01495}",not_computed
