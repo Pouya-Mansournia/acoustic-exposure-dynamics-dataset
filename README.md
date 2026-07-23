@@ -6,6 +6,13 @@ An anonymized companion dataset for studying privacy-preserving, long-term dB-on
 
 This repository contains aggregate feature tables, mixed-effects model outputs, cross-deployment validation summaries, and publication figures. It does not contain raw audio, raw high-frequency logs, exact calendar dates, clock times, customer names, team labels, original floor labels, or labeled floor-plan images.
 
+## Release Status
+
+- Current prepared release: `v1.0.0`
+- GitHub repository: <https://github.com/Pouya-Mansournia/acoustic-exposure-dynamics-dataset>
+- DOI status: pending Zenodo archive. After Zenodo is enabled for this GitHub repository and the release is published, add the DOI here and to [`CITATION.cff`](CITATION.cff).
+- Project type: scholarly dataset and manuscript companion material.
+
 ## Dataset Snapshot
 
 | Item | Public description |
@@ -62,6 +69,13 @@ figures/
 docs/
 ```
 
+## How To Use
+
+1. Start with [`data/metadata/public_manifest.json`](data/metadata/public_manifest.json) for the release inventory and privacy transform.
+2. Use [`data/metadata/data_dictionary.md`](data/metadata/data_dictionary.md) to interpret public fields.
+3. Load the CSV files under `data/processed/` for aggregate analysis, model review, or manuscript reproduction.
+4. Use the figures under `figures/manuscript/` as public, anonymized visual summaries.
+
 ## Citation
 
 If you use this dataset, cite this repository and the associated manuscript when available:
@@ -69,6 +83,15 @@ If you use this dataset, cite this repository and the associated manuscript when
 > Mansournia, P. et al. Acoustic Exposure Dynamics Dataset: Anonymized long-term dB-only office sound-level features for privacy-preserving acoustic monitoring research.
 
 See [`CITATION.cff`](CITATION.cff) for machine-readable citation metadata.
+
+## Zenodo Archiving
+
+This repository is prepared for Zenodo with [`.zenodo.json`](.zenodo.json). To mint a DOI:
+
+1. Enable this GitHub repository in Zenodo.
+2. Publish the GitHub release for `v1.0.0`.
+3. Copy the Zenodo DOI into this README, `CITATION.cff`, `RELEASE_NOTES.md`, and the GitHub Release body.
+4. Commit and push the DOI metadata update.
 
 ## License
 

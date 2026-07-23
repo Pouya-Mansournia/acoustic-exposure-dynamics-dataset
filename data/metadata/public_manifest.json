@@ -34,9 +34,11 @@
   "files": [
     ".gitattributes",
     ".gitignore",
+    ".zenodo.json",
     "CITATION.cff",
     "LICENSE.md",
     "README.md",
+    "RELEASE_NOTES.md",
     "data/metadata/data_dictionary.md",
     "data/metadata/main_sensor_key_public.csv",
     "data/metadata/validation_sensor_key_public.csv",

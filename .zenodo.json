@@ -1,0 +1,33 @@
+{
+  "title": "Acoustic Exposure Dynamics Dataset",
+  "upload_type": "dataset",
+  "publication_date": "2026-07-23",
+  "version": "1.0.0",
+  "creators": [
+    {
+      "name": "Mansournia, Pouya",
+      "affiliation": "X-Robotiics / Acust.ai"
+    }
+  ],
+  "description": "An anonymized companion dataset for studying privacy-preserving, long-term dB-only acoustic exposure dynamics in occupied office deployments. The release contains aggregate feature tables, mixed-effects model outputs, cross-deployment validation summaries, metadata, documentation, and anonymized publication figures. It excludes raw audio, raw high-frequency logs, exact calendar dates, clock times, customer names, team labels, original floor labels, and labeled floor-plan images.",
+  "keywords": [
+    "office acoustics",
+    "acoustic exposure",
+    "sound-level monitoring",
+    "privacy-preserving sensing",
+    "longitudinal monitoring",
+    "IoT",
+    "workplace sensing",
+    "dataset"
+  ],
+  "license": "cc-by-4.0",
+  "language": "eng",
+  "access_right": "open",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/Pouya-Mansournia/acoustic-exposure-dynamics-dataset",
+      "relation": "isSupplementTo",
+      "resource_type": "dataset"
+    }
+  ]
+}
