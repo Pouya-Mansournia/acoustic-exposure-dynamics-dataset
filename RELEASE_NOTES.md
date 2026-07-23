@@ -28,4 +28,6 @@ The public aggregate dataset, documentation, and figures are released under CC B
 
 ### DOI
 
-Pending Zenodo archive. After Zenodo is enabled for the GitHub repository and this release is published, add the DOI to this file, `README.md`, `CITATION.cff`, and the GitHub Release body.
+DOI: [10.5281/zenodo.21503880](https://doi.org/10.5281/zenodo.21503880)
+
+GitHub release: <https://github.com/Pouya-Mansournia/acoustic-exposure-dynamics-dataset/releases/tag/v1.0.0>

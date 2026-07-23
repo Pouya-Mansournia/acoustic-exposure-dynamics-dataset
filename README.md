@@ -1,6 +1,7 @@
 # Acoustic Exposure Dynamics Dataset
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](LICENSE.md)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21503880.svg)](https://doi.org/10.5281/zenodo.21503880)
 
 An anonymized companion dataset for studying privacy-preserving, long-term dB-only acoustic exposure dynamics in occupied office deployments.
 
@@ -10,7 +11,7 @@ This repository contains aggregate feature tables, mixed-effects model outputs, 
 
 - Current prepared release: `v1.0.0`
 - GitHub repository: <https://github.com/Pouya-Mansournia/acoustic-exposure-dynamics-dataset>
-- DOI status: pending Zenodo archive. After Zenodo is enabled for this GitHub repository and the release is published, add the DOI here and to [`CITATION.cff`](CITATION.cff).
+- Zenodo DOI: [10.5281/zenodo.21503880](https://doi.org/10.5281/zenodo.21503880)
 - Project type: scholarly dataset and manuscript companion material.
 
 ## Dataset Snapshot
@@ -80,18 +81,17 @@ docs/
 
 If you use this dataset, cite this repository and the associated manuscript when available:
 
-> Mansournia, P. et al. Acoustic Exposure Dynamics Dataset: Anonymized long-term dB-only office sound-level features for privacy-preserving acoustic monitoring research.
+> Mansournia, P. (2026). Acoustic Exposure Dynamics Dataset: Anonymized long-term dB-only office sound-level features for privacy-preserving acoustic monitoring research (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.21503880
 
 See [`CITATION.cff`](CITATION.cff) for machine-readable citation metadata.
 
 ## Zenodo Archiving
 
-This repository is prepared for Zenodo with [`.zenodo.json`](.zenodo.json). To mint a DOI:
+This repository is archived on Zenodo:
 
-1. Enable this GitHub repository in Zenodo.
-2. Publish the GitHub release for `v1.0.0`.
-3. Copy the Zenodo DOI into this README, `CITATION.cff`, `RELEASE_NOTES.md`, and the GitHub Release body.
-4. Commit and push the DOI metadata update.
+- DOI: [10.5281/zenodo.21503880](https://doi.org/10.5281/zenodo.21503880)
+- GitHub release: <https://github.com/Pouya-Mansournia/acoustic-exposure-dynamics-dataset/releases/tag/v1.0.0>
+- Zenodo metadata source: [`.zenodo.json`](.zenodo.json)
 
 ## License
 
