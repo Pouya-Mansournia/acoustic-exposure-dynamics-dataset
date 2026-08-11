@@ -32,3 +32,12 @@
 - `operational_group`: broad operational category used in aggregate analysis.
 
 These fields are aggregate research features and should not be interpreted as source labels, speech labels, occupancy counts, or room-acoustic parameters.
+
+## Calibration Validation Features (`data/processed/calibration_validation/`)
+
+- `elapsed_seconds`: seconds elapsed since the start of the single co-location session (replaces the original wall-clock timestamp).
+- `acust_device_db`: the Acust device's own calibrated dashboard/MQTT-reported dB value, 1 s bin mean.
+- `umik1_reference_db`: the co-located UMIK-1 reference microphone's reported dB, 1 s bin mean, after cross-correlation time alignment.
+- `error_device_minus_ref`: `acust_device_db - umik1_reference_db` for that 1 s bin.
+- `bin`: UMIK-1 reference SPL band (`<60`, `60-70`, `70-80`, `>=80` dB) used in the by-band summary file.
+- `n`, `bias`, `mae`, `rmse`: sample count, mean error, mean absolute error, and root-mean-square error of `error_device_minus_ref` within each band.

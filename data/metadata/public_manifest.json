@@ -22,6 +22,16 @@
   "public_release_contains_calendar_dates": false,
   "public_release_contains_clock_times": false,
   "sound_level_definition": "Calibrated SPL-like dB values derived from deployed firmware RMS windows; not IEC-certified sound-level-meter measurements.",
+  "calibration_validation": {
+    "description": "A single continuous, unscripted in-situ co-location session between one Acust device and a calibrated miniDSP UMIK-1 reference microphone, 1-second-bin aligned via cross-correlation.",
+    "n_aligned_1s_samples": 1845,
+    "pearson_r": 0.87,
+    "mean_bias_db_device_minus_reference": 8.64,
+    "rmse_db": 10.15,
+    "in_sample_linear_fit_residual_mae_db": 2.40,
+    "in_sample_linear_fit_residual_rmse_db": 3.53,
+    "scope_note": "One device, one room, one session, ambient (not swept-tone) stimulus; not a controlled multi-level laboratory calibration campaign."
+  },
   "privacy_transform": [
     "Raw dB rows are not included.",
     "Raw audio was never stored and is not included.",
@@ -46,6 +56,8 @@
     "data/processed/cross_deployment/cross_building_manuscript_table_public.csv",
     "data/processed/cross_deployment/cross_building_similar_mean_pair_summary_public.csv",
     "data/processed/cross_deployment/external_validation_results_public.csv",
+    "data/processed/calibration_validation/umik1_insitu_comparison_1s_public.csv",
+    "data/processed/calibration_validation/umik1_insitu_summary_by_band_public.csv",
     "data/processed/main_deployment/acoustic_communities_public.csv",
     "data/processed/main_deployment/activity_window_effect_summary_public.csv",
     "data/processed/main_deployment/aggregation_method_sensitivity_public.csv",
@@ -97,6 +109,8 @@
     "figures/manuscript/figure_evi_sensitivity.png",
     "figures/manuscript/figure_mixed_effects_estimates.png",
     "figures/manuscript/figure_raw_vs_residualized_spatial_relationship.png",
-    "figures/manuscript/figure_similar_mean_different_dynamics.png"
+    "figures/manuscript/figure_similar_mean_different_dynamics.png",
+    "figures/manuscript/fig_calibration_engine_pipeline.png",
+    "figures/manuscript/fig_umik1_insitu_comparison.png"
   ]
 }

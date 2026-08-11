@@ -7,3 +7,5 @@ The reported values are calibrated SPL-like dB values derived from short RMS win
 Deployment A supports the main multi-floor analysis. Deployment B supports compatible external validation only: normal-workday versus closed-day direction, activity-window direction, and the beyond-average-dB pattern.
 
 Operational event labels are retained only as broad categories and are interpreted as operational case observations rather than statistically replicated interventions.
+
+A single continuous, unscripted in-situ co-location session against a calibrated UMIK-1 reference microphone is also included (`data/processed/calibration_validation/`), aligned to 1-second bins by cross-correlation. See `docs/privacy_and_limitations.md` for its scope and headline numbers.
