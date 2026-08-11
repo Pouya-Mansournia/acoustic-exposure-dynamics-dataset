@@ -8,8 +8,8 @@ authors:
 repository-code: "https://github.com/Pouya-Mansournia/acoustic-exposure-dynamics-dataset"
 url: "https://github.com/Pouya-Mansournia/acoustic-exposure-dynamics-dataset"
 doi: "10.5281/zenodo.21503880"
-version: "1.0.0"
-date-released: "2026-07-23"
+version: "1.1.0"
+date-released: "2026-08-11"
 abstract: "An anonymized collection of long-term dB-only office sound-level feature tables for studying privacy-preserving acoustic exposure dynamics in occupied office deployments."
 keywords:
   - office acoustics

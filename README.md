@@ -24,8 +24,7 @@ The dataset contains aggregate feature tables, mixed-effects model outputs, cros
 
 ## Release Status
 
-- Current prepared release: `v1.1.0` (draft; not yet tagged on GitHub or archived on Zenodo)
-- Latest published release: `v1.0.0`, archived on GitHub and Zenodo
+- Current release: `v1.1.0`, archived on GitHub and Zenodo
 - See [`RELEASE_NOTES.md`](RELEASE_NOTES.md) for the full version history
 - GitHub repository: <https://github.com/Pouya-Mansournia/acoustic-exposure-dynamics-dataset>
 - Zenodo DOI: [10.5281/zenodo.21503880](https://doi.org/10.5281/zenodo.21503880)
@@ -109,7 +108,7 @@ docs/
 
 If you use this dataset, cite this repository and the associated manuscript when available:
 
-> Mansournia, P. (2026). Acoustic Exposure Dynamics Dataset: Anonymized long-term dB-only office sound-level features for privacy-preserving acoustic monitoring research (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.21503880
+> Mansournia, P. (2026). Acoustic Exposure Dynamics Dataset: Anonymized long-term dB-only office sound-level features for privacy-preserving acoustic monitoring research (v1.1.0). Zenodo. https://doi.org/10.5281/zenodo.21503880
 
 See [`CITATION.cff`](CITATION.cff) for machine-readable citation metadata.
 
@@ -117,8 +116,8 @@ See [`CITATION.cff`](CITATION.cff) for machine-readable citation metadata.
 
 This repository is archived on Zenodo:
 
-- DOI: [10.5281/zenodo.21503880](https://doi.org/10.5281/zenodo.21503880)
-- GitHub release: <https://github.com/Pouya-Mansournia/acoustic-exposure-dynamics-dataset/releases/tag/v1.0.0>
+- Concept DOI (always resolves to the latest version): [10.5281/zenodo.21503880](https://doi.org/10.5281/zenodo.21503880)
+- GitHub releases: <https://github.com/Pouya-Mansournia/acoustic-exposure-dynamics-dataset/releases>
 - Zenodo metadata source: [`.zenodo.json`](.zenodo.json)
 
 ## License

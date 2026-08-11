@@ -1,8 +1,8 @@
 # Release Notes
 
-## v1.1.0 - draft, not yet published
+## v1.1.0 - 2026-08-11
 
-Adds real calibration-validation evidence; not yet tagged on GitHub or archived on Zenodo.
+Adds real calibration-validation evidence.
 
 ### Added
 
