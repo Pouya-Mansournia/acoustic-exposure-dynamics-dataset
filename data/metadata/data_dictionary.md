@@ -41,3 +41,25 @@ These fields are aggregate research features and should not be interpreted as so
 - `error_device_minus_ref`: `acust_device_db - umik1_reference_db` for that 1 s bin.
 - `bin`: UMIK-1 reference SPL band (`<60`, `60-70`, `70-80`, `>=80` dB) used in the by-band summary file.
 - `n`, `bias`, `mae`, `rmse`: sample count, mean error, mean absolute error, and root-mean-square error of `error_device_minus_ref` within each band.
+
+## Multi-device Co-location Features (`data/processed/calibration_validation/multidevice_colocation_2026-09-01_*`)
+
+Second, independent in-situ check: ten production nodes co-located on one bench with
+a UMIK-1 reference microphone for one continuous ~24.8 min ambient session
+(2026-09-01). Device series carry only a server-ingest timestamp and are aligned to
+the reference by a per-device cross-correlation lag search; metrics are computed on
+lag-aligned 10 s bins. Node IDs are anonymised to `N01`..`N10`.
+
+- `*_per_device_metrics_public.csv`: one row per node — `node`, `device_id`
+  (opaque hash), `n`, `lag_s`, `xcorr_r`, `r`, `device_mean_db`,
+  `reference_mean_db`, `bias_db`, `mae_db`, `rmse_db`, `response_slope`,
+  `response_intercept`, `corr_slope`, `corr_intercept`, `corr_rmse_db`
+  (residual RMSE after an in-sample per-device inverse linear fit).
+- `*_fleet_summary_public.csv`: session and fleet aggregates (mean bias,
+  inter-device SD, pooled MAE/RMSE, slope spread, fleet-offset residual).
+- `*_aligned_10s_public.csv`: tidy aligned samples — `node`, `bin_start_utc`,
+  `device_db`, `reference_db`, `error_db`.
+
+Headline: median aligned r 0.72; fleet mean bias +4.3 dB; inter-device bias SD
+7.0 dB; device-vs-reference slopes 1.3–2.8 (gain error, not offset-only).
+This is an uncontrolled ambient-stimulus bench check, not a certified campaign.

@@ -47,3 +47,13 @@ The public aggregate dataset, documentation, and figures are released under CC B
 DOI: [10.5281/zenodo.21503880](https://doi.org/10.5281/zenodo.21503880)
 
 GitHub release: <https://github.com/Pouya-Mansournia/acoustic-exposure-dynamics-dataset/releases/tag/v1.0.0>
+
+---
+
+## Pending update (manuscript v05)
+
+Adds `data/processed/calibration_validation/multidevice_colocation_2026-09-01_*`:
+a ten-device in-situ co-location against a UMIK-1 reference microphone
+(per-device metrics, fleet summary, aligned 10 s samples) plus the matching
+figures. See the data dictionary section "Multi-device Co-location Features".
+Not yet cut as a tagged release / new DOI.
