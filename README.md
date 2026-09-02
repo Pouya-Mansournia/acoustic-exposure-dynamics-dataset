@@ -36,6 +36,56 @@ labels, or labeled floor-plan images.
 `SPL-like` means firmware-reported sound-level values. It does not mean
 IEC-certified sound-level-meter output or formal A-weighted equivalent level.
 
+## System architecture and selected manuscript figures
+
+<p align="center">
+  <img src="figures/manuscript/fig_system_architecture.png"
+       alt="Privacy-oriented dB-only monitoring architecture from IoT nodes through private logging and aggregate analysis outputs"
+       width="900">
+</p>
+
+<p align="center"><em>System-level data flow and privacy boundary. The public
+release contains aggregate feature outputs, not raw audio, speech content, or
+source labels.</em></p>
+
+The architecture label describing calibrated nodes refers to the deployed
+firmware workflow. It does not establish IEC 61672 conformity, formal
+A-weighting, frequency-response flatness, or valid absolute-threshold
+interpretation.
+
+<p align="center">
+  <img src="figures/manuscript/fig_cross_building_replication.png"
+       alt="Cross-deployment comparison of record counts, closed-day contrasts, activity-window contrasts, and similar-mean pair dynamics"
+       width="900">
+</p>
+
+<p align="center"><em>Selected cross-deployment results. Deployment B provides
+limited directional replication for compatible contrasts; it is not an
+independent metrological validation.</em></p>
+
+<table>
+  <tr>
+    <td width="50%">
+      <img src="figures/manuscript/figure_similar_mean_different_dynamics.png"
+           alt="Share of similar-mean sensor pairs with different exposure dynamics in Deployments A and B">
+    </td>
+    <td width="50%">
+      <img src="figures/fig_multidevice_scatter.png"
+           alt="Ten-device ambient comparison against a UMIK-1 reference microphone">
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Mean insufficiency.</strong> Sensor pairs within 1 dB can still
+    differ in quiet share, high-level share, or variability.</td>
+    <td><strong>Device variability.</strong> The uncontrolled ambient
+    co-location reveals substantial unit-to-unit spread and motivates
+    controlled calibration.</td>
+  </tr>
+</table>
+
+Additional publication figures are available under
+[`figures/manuscript/`](figures/manuscript/).
+
 ## Repository structure
 
 ```text
