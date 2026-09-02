@@ -1,5 +1,21 @@
 # Release Notes
 
+## Unreleased main update - 2026-09-02
+
+Privacy-corrected and scientifically aligned update for the final manuscript.
+
+### Changed
+
+- Removed row-level wall-clock timestamps from the public ten-device aligned data
+  and replaced them with per-node elapsed seconds.
+- Removed `esp-*` hardware identifiers from per-device public metrics.
+- Removed session start/end timestamps from the fleet summary.
+- Added device-cluster bootstrap, within-session chronological holdout, and
+  historical-correction transfer outputs.
+- Updated the manuscript title, cross-deployment terminology, and claim boundaries.
+- Clarified that both UMIK-1 comparisons are uncontrolled ambient checks rather
+  than controlled calibration or IEC-conformity evidence.
+
 ## v1.1.0 - 2026-08-11
 
 Adds real calibration-validation evidence.

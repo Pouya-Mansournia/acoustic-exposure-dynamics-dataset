@@ -1,0 +1,4 @@
+metric,estimate,ci95_low,ci95_high,resampling_unit,n_devices
+fleet_mean_bias_db,4.2770,0.0840,8.1940,device,10
+inter_device_bias_sd_db,6.9875,4.1171,8.4459,device,10
+median_response_slope,2.2715,1.4440,2.5785,device,10

@@ -1,11 +1,15 @@
 # Methodology Notes
 
-The public dataset is derived from two occupied-office deployments of calibrated dB-only acoustic IoT nodes. Raw audio was not stored. Raw high-frequency logs are not included.
+The public dataset is derived from two occupied-office deployments of dB-only
+acoustic IoT nodes. Raw audio was not stored. Raw high-frequency deployment logs
+are not included.
 
-The reported values are calibrated SPL-like dB values derived from short RMS windows in deployed firmware. They are not represented as IEC-certified sound-level-meter measurements and are not formal LAeq values unless the firmware averaging definition and calibration residuals are independently supplied.
+The reported quantities are firmware-derived SPL-like dB values from short RMS
+windows. They are not IEC-certified sound-level-meter measurements and are not
+formal LAeq values. Deployment A supports the main multi-floor analysis;
+Deployment B provides only compatible cross-deployment directional checks.
 
-Deployment A supports the main multi-floor analysis. Deployment B supports compatible external validation only: normal-workday versus closed-day direction, activity-window direction, and the beyond-average-dB pattern.
-
-Operational event labels are retained only as broad categories and are interpreted as operational case observations rather than statistically replicated interventions.
-
-A single continuous, unscripted in-situ co-location session against a calibrated UMIK-1 reference microphone is also included (`data/processed/calibration_validation/`), aligned to 1-second bins by cross-correlation. See `docs/privacy_and_limitations.md` for its scope and headline numbers.
+Operational event labels are broad categories and are interpreted as case
+observations rather than replicated interventions. Reference comparisons use
+uncontrolled ambient sound and post-hoc alignment. Read
+`docs/privacy_and_limitations.md` before interpreting calibration-related files.

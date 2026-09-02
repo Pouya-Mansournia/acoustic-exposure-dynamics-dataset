@@ -9,12 +9,12 @@
       "affiliation": "X-Robotiics / Acust.ai"
     }
   ],
-  "description": "An anonymized companion dataset for studying privacy-preserving, long-term dB-only acoustic exposure dynamics in occupied office deployments. The release contains aggregate feature tables, mixed-effects model outputs, cross-deployment validation summaries, a real device-vs-reference-microphone in-situ calibration check, metadata, documentation, and anonymized publication figures. It excludes raw audio, raw high-frequency logs, exact calendar dates, clock times, customer names, team labels, original floor labels, and labeled floor-plan images.",
+  "description": "An anonymized companion dataset for privacy-oriented dB-only operational acoustic monitoring in occupied offices. It contains aggregate features, mixed-effects outputs, cross-deployment comparisons, uncontrolled device-versus-reference co-locations, secondary archived-data analyses, metadata, and figures. It excludes raw audio, raw deployment logs, row-level timestamps, hardware identifiers, customer names, team labels, original floor labels, and labeled floor-plan images.",
   "keywords": [
     "office acoustics",
     "acoustic exposure",
     "sound-level monitoring",
-    "privacy-preserving sensing",
+    "privacy-oriented sensing",
     "longitudinal monitoring",
     "IoT",
     "workplace sensing",

@@ -10,12 +10,12 @@ url: "https://github.com/Pouya-Mansournia/acoustic-exposure-dynamics-dataset"
 doi: "10.5281/zenodo.21503880"
 version: "1.1.0"
 date-released: "2026-08-11"
-abstract: "An anonymized collection of long-term dB-only office sound-level feature tables for studying privacy-preserving acoustic exposure dynamics in occupied office deployments."
+abstract: "An anonymized collection of dB-only office sound-level features and reference-comparison outputs for privacy-oriented operational acoustic monitoring research."
 keywords:
   - office acoustics
   - acoustic exposure
   - sound-level monitoring
-  - privacy-preserving sensing
+  - privacy-oriented sensing
   - IoT
   - longitudinal monitoring
   - office deployments

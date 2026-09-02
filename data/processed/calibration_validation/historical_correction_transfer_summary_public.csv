@@ -1,0 +1,2 @@
+historical_fit_slope,historical_fit_intercept,target_n_devices,target_n_aligned_bins,pooled_transfer_bias_db,pooled_transfer_mae_db,pooled_transfer_rmse_db
+0.6078,21.2766,10,546,0.1861,6.8906,8.9833
